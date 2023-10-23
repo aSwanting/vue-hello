@@ -18,12 +18,14 @@
         <div id="test-box" :class="classes[3]"> </div>
         <div :style="flexWrapper">
             <button :style="flexButton" @click="removeCircle">-</button>
+            <button :style="flexButton" @click="clearCircles">clear</button>
             <button :style="flexButton" @click="addCircle">+</button>
         </div>
 
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/circle.js"></script>
     <script src="./js/script.js"></script>
 
 </body>

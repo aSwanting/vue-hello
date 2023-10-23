@@ -1,3 +1,7 @@
+:root {
+    --primary-color: rgb(108, 147, 156);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -18,6 +22,10 @@ html {
     gap: 20px;
 }
 
+.header-text, .body-text {
+    color: var(--primary-color);
+}
+
 .header-text {
     text-align: center;
     text-transform: uppercase;
@@ -30,10 +38,12 @@ html {
 
 .rounded-img {
     outline: 5px solid rgb(181, 243, 245);
+    max-width: 300px;
+    width: 90%;
+    aspect-ratio: 1;
     border-radius: 50%;
     display: block;
     margin: 50px auto;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.349);
     cursor: pointer;
     transition: 300ms all;
 }
@@ -48,11 +58,35 @@ html {
     outline: 25px solid rgb(234, 181, 245);
 }
 
+.test-box,
+button {
+    color:var(--primary-color)
+}
 
 .test-box {
-    border: 3px solid rgb(0, 0, 0);
-    border-radius: 10px;
+    border: 5px solid;
+    border-radius: 15px;
     flex-grow: 1;
     margin: 20px;
     position: relative;
+}
+
+button {
+    transition: 100ms all;
+    background-color: transparent;
+    border: 2px solid;
+}
+
+button:hover {
+    transform: scale(105%);
+}
+
+button:active {
+    transform: scale(98%);
+}
+
+img,
+button,
+.test-box {
+    filter: drop-shadow(5px 8px 8px rgba(0, 0, 0, 0.2));
 }
