@@ -15,10 +15,10 @@
         <h1 :class="classes[0]">{{pageHeader}}</h1>
         <img :class="classes[1]" :src="imageSRC" @click="numPlus">
         <p :class="classes[2]">Image clicks: {{num}}</p>
-        <div :class="classes[3]"></div>
+        <div id="test-box" :class="classes[3]"> </div>
         <div :style="flexWrapper">
-            <button :style="flexButton">-</button>
-            <button :style="flexButton">+</button>
+            <button :style="flexButton" @click="removeCircle">-</button>
+            <button :style="flexButton" @click="addCircle">+</button>
         </div>
 
     </div>
