@@ -12,8 +12,9 @@
 
     <div id="app">
 
-        <h1>{{pageHeader}}</h1>
-        <img :class="imageClass" :src="imageSRC">
+        <h1 :class="classes[0]">{{pageHeader}}</h1>
+        <img :class="classes[1]" :src="imageSRC" @click="numPlus">
+        <p :class="classes[2]">Image clicks: {{num}}</p>
 
     </div>
 

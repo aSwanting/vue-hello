@@ -1,3 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+#app {
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(230, 236, 243);
+    padding: 20px;
+}
+
+.header-text {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
 .rounded-img {
+    outline: 5px solid rgb(181, 243, 245);
     border-radius: 50%;
+    display: block;
+    margin: 50px auto;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.rounded-img:hover {
+    transform: scale(102%);
+    outline: 10px solid rgb(186, 245, 181);
+}
+
+.rounded-img:active {
+    transform: scale(95%);
+    outline: 25px solid rgb(234, 181, 245);
+}
+
+.body-text {
+    text-align: center;
+    font-weight: 600;
 }
