@@ -58,7 +58,6 @@ createApp({
       let x = rand(d / 2, testBox.clientWidth - d / 2)
       let y = rand(d / 2, testBox.clientHeight - d / 2)
       this.circles.push(new Circle(d, x, y, testBox, testBox))
-
     },
 
     removeCircle() {

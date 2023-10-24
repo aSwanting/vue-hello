@@ -16,13 +16,23 @@ html {
     height: 100vh;
     overflow: hidden;
     background-color: rgb(230, 236, 243);
-    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+
+}
+
+.app-main {
+    overflow: auto;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.header-text, .body-text {
+.header-text,
+.body-text {
     color: var(--primary-color);
 }
 
@@ -60,7 +70,7 @@ html {
 
 .test-box,
 button {
-    color:var(--primary-color)
+    color: var(--primary-color)
 }
 
 .test-box {
@@ -69,6 +79,7 @@ button {
     flex-grow: 1;
     margin: 20px;
     position: relative;
+    padding: 50px;
 }
 
 button {
@@ -89,4 +100,14 @@ img,
 button,
 .test-box {
     filter: drop-shadow(5px 8px 8px rgba(0, 0, 0, 0.2));
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 20px;
 }
