@@ -53,26 +53,37 @@ createApp({
     },
 
     addCircle() {
+
       const testBox = document.getElementById("test-box")
       const d = rand(20, 40)
       let x = rand(d / 2, testBox.clientWidth - d / 2)
       let y = rand(d / 2, testBox.clientHeight - d / 2)
       this.circles.push(new Circle(d, x, y, testBox, testBox))
+
+      console.log(this.circles.length)
+
     },
 
-    removeCircle() {
+    removeCircle() {  
+
       let lastCircle
       if (this.circles.length > 0) {
         lastCircle = this.circles[this.circles.length - 1].element
         lastCircle.remove()
         this.circles.pop()
       }
+
+      console.log(this.circles.length)
+
     },
 
     clearCircles() {
-      const testBox = document.getElementById("test-box")
-      testBox.innerHTML = ""
+
+      this.circles.forEach(circle => circle.deleteCircle())
       this.circles = []
+
+      console.log(this.circles.length)
+
     },
 
     animate() {

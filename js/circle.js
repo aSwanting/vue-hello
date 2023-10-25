@@ -45,6 +45,10 @@ class Circle {
 
     }
 
+    deleteCircle() {
+        this.element.remove()
+    }
+
     // Get Random Direction, Exclude 0
     getDirection(min, max) {
 
